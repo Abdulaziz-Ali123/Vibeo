@@ -1,0 +1,132 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: #262626;
+}
+
+
+.wrapper{
+    width: 100%;
+    position: absolute;
+    align-content: center;
+}
+
+.logo{
+    pointer-events: none;
+    size: 40%;
+}
+
+.function-section{
+    position:relative;
+    left: 3%;
+    margin-top: -25%;
+}
+
+form{
+    position: relative;
+    padding: 10%;
+    padding-bottom: 15%;
+    left: 25%;
+    background-color: #ffffffb2;
+    border-radius: 30px;
+    width: 125%;
+    border-style: dotted;
+    align-items: center;
+}
+
+form label{
+    position: relative; 
+    font-size: 30px;
+    color: whitesmoke;
+    left: 37%;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #30349D;
+    padding:20px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+
+.divider {
+    position: relative;
+    padding-top: 10%;
+    color:rgb(104, 103, 103);
+    display: flex;
+    align-items: center;
+}
+.divider hr {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background-color:rgb(104, 103, 103);
+    margin: 0 10px;
+}
+
+.instuctions{
+    position: relative;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.instuctions h3{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.search{
+    position: relative;
+    height: 3rem;
+    width: 32rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #FC2500;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.search-section{
+    position:relative;
+    left: 7rem;
+    padding-top: 3rem;
+}
+
+
+.divider2 {
+    position: relative;
+    left: 45%;
+    padding-top: 10%;
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+.divider2 hr {
+    flex: 1;
+    border: none;
+    height: 2px;
+    background-color:rgb(255, 254, 254);
+    margin: 0 10px;
+}

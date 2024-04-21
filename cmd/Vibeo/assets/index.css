@@ -10,38 +10,46 @@ body{
 
 .wrapper{
     width: 100%;
-    position: absolute;
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-content: center;
+    align-items: flex-end;
 }
 
+
 .logo{
-    pointer-events: none;
-    size: 40%;
+   max-width:100%;
+   height: auto;
 }
 
 .function-section{
-    position:relative;
-    left: 3%;
-    margin-top: -25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 form{
-    position: relative;
     padding: 10%;
     padding-bottom: 15%;
     left: 25%;
     background-color: #ffffffb2;
     border-radius: 30px;
-    width: 125%;
+    width: 90%;
     border-style: dotted;
     align-items: center;
 }
 
 form label{
-    position: relative; 
     font-size: 30px;
     color: whitesmoke;
-    left: 37%;
+}
+
+.choose-file{
+    padding-left:12rem
 }
 
 .inputfile {
@@ -69,11 +77,12 @@ form label{
 
 
 .divider {
-    position: relative;
+    
     padding-top: 10%;
     color:rgb(104, 103, 103);
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 .divider hr {
     flex: 1;
@@ -97,9 +106,8 @@ form label{
 
 
 .search{
-    position: relative;
     height: 3rem;
-    width: 32rem;
+    width:32rem;
     padding-left: 15px;
     padding-right: 15px;
     color: #FC2500;
@@ -108,15 +116,13 @@ form label{
 }
 
 .search-section{
-    position:relative;
-    left: 7rem;
     padding-top: 3rem;
+    padding-left: 4rem;
 }
 
 
 .divider2 {
-    position: relative;
-    left: 45%;
+    width:110%;
     padding-top: 10%;
     color:rgb(255, 255, 255);
     font-size: 25px;

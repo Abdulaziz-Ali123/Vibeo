@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vibeo</title>
     <link rel="stylesheet" type='text/css' href="../assets/index.css">
+    <script type="text/javascript" src="../templates/drag_drop.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -12,11 +13,14 @@
         </div>
         
         <div class="function-section">
-            <form>
+            <form method="POST" action="/" id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
                 <div class="choose-file">
                     <input type="file" name="file" id="file" class='inputfile'accept=".mp3,.mp4,.mov" >
-                    <label for="file">Choose a file</label>
+                    <label for="file"> Choose a file</label>
+                    
                 </div>
+                <div id="filename"></div>
+                
 
                 <div class="divider">
                     <hr>
@@ -28,6 +32,11 @@
                     <h3>Drag and Drop File</h3>
                     <p>Only *.mp3,*.mp4, or .mov files</p>
                 </div>
+
+               <div class="sub_btn">
+                <button type="submit">Upload</button>
+               </div> 
+                
                 
 
             </form>

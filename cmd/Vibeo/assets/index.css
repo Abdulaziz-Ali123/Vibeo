@@ -21,6 +21,7 @@ body{
 
 
 .logo{
+   padding-left: 2rem;
    max-width:100%;
    height: auto;
 }
@@ -33,14 +34,18 @@ body{
 }
 
 form{
-    padding: 10%;
-    padding-bottom: 15%;
+    padding: 8%;
+    padding-bottom: 10%;
     left: 25%;
-    background-color: #ffffffb2;
+    background-image: linear-gradient(0deg,#ffffffb2 50%,#ffffffdb 50%);
     border-radius: 30px;
     width: 90%;
     border-style: dotted;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 form label{
@@ -48,9 +53,7 @@ form label{
     color: whitesmoke;
 }
 
-.choose-file{
-    padding-left:12rem
-}
+
 
 .inputfile {
 	width: 0.1px;
@@ -95,7 +98,7 @@ form label{
 .instuctions{
     position: relative;
     text-align: center;
-    padding-top: 15%;
+    padding-top: 1rem;
 }
 
 .instuctions h3{
@@ -135,4 +138,25 @@ form label{
     height: 2px;
     background-color:rgb(255, 254, 254);
     margin: 0 10px;
+}
+
+
+#filename{
+    text-align: center;
+    padding: 1rem;
+}
+
+.sub_btn{
+    padding-top:2rem
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: 700;
+    color: 30349D;
+    background-color: white;
+    padding:10px;
+    border-radius: 15px;
+    border:none;
+    display: inline-block;
 }

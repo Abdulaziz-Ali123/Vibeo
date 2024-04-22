@@ -22,8 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const file = item.getAsFile();
             if (file.size < 1000000000){ // restrict size to 1 gb
               infoZone.textContent = 'File name: ' + file.name;
-              console.log(`… file[${i}].name = ${file.name}`);
-              console.log(`… file[${i}].size = ${file.size/(1000000000)} GB`);
             }
           }
           
@@ -32,14 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
     } 
 }
 
-function dragOverHandler(ev) {
-    console.log("File(s) in drop zone");
-  
-    // Prevent default behavior (Prevent file from being opened)
-    ev.preventDefault();
-  }
-
-
   function showFileName(event) {
     var input = event.target;
     var fileName = input.files[0].name;
@@ -47,5 +37,3 @@ function dragOverHandler(ev) {
   }
 });
 
-
-console.log("File(s) in drop zone");

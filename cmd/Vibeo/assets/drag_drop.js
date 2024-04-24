@@ -30,6 +30,12 @@ document.addEventListener("DOMContentLoaded", function() {
     } 
 }
 
+  function dragOverHandler(ev){
+    // Prevent default behavior (Prevent file from being opened)
+    ev.preventDefault();
+
+  }
+
   function showFileName(event) {
     var input = event.target;
     var fileName = input.files[0].name;

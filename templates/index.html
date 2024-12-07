@@ -13,9 +13,9 @@
         </div>
         
         <div class="function-section">
-            <form method="POST" action="/" id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+            <form method="POST" action="http://127.0.0.1:8800/upload"  enctype="multipart/form-data" id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
                 <div class="choose-file">
-                    <input type="file" name="file" id="file" class='inputfile'accept=".mp3,.mp4,.mov" >
+                    <input type="file" name="file" id="file" class='inputfile'accept=".mp4" >
                     <label for="file"> Choose a file</label>
                     
                 </div>
@@ -30,7 +30,7 @@
                 
                 <div class="instuctions">
                     <h3>Drag and Drop File</h3>
-                    <p>Only *.mp3,*.mp4, or .mov files</p>
+                    <p>*.mp3 files only</p>
                 </div>
 
                <div class="sub_btn">
